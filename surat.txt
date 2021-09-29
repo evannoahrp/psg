@@ -1,0 +1,23 @@
+Selamat pagi Pak Wawan
+
+Berikut progress dokumen TA yang sudah saya kerjakan
+1.  Penambahan use case pada bab III
+2.  Pengerajaan bab IV dari bagian implementasi perangkat lunak sampai bagian analisa hasil klasifikasi BB/U
+
+Ada beberapa kendala yang menghambat saya mengerjakan dokumen selama 1 bulan terakhir ini, antara lain
+1.  Saat pencarian akurasi terbaik dari JST, tahap pencarian akurasi telah selesai hingga tahap TB/U.
+namun ada permasalahan pada bagian pembagian data, karena pembagian data menggunakan train_test_split.
+2.  Selain itu pada proses training JST, early stoping kadang tidak terpakai,
+sehingga proses training terus berjalan sepanjang maksimal epoch (4000). 
+
+Dari beberapa kendala diatas, sudah saya diperbaiki dengan cara
+1.  mengganti train_test_split dengan kfold, dan menghitung ulang pencarian akurasi terbaik.
+2.  tingkat patience dari early stoping dikurangi dari 100 menjadi 50, dan maksimal epoch dikurangi dari 4000 menjadi 1000.
+
+untuk saat ini tahap pencarian akurasi terbaik untuk klasifikasi BB/U telah selesai,
+dan sedang dalam pengerjaan untuk klasifikasi TB/U. 
+
+demikian progress dokumen TA saya, untuk progress selanjutnya akan saya krimkan kembali ke email bapak 2-3 hari kedepan
+
+
+evan
